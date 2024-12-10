@@ -1,4 +1,4 @@
-# PolicyAndAuthoriation
+# Policy And Authorization
 Laravel About Policy and Authorization
 
 
