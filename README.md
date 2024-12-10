@@ -119,13 +119,13 @@ For handling complex authorization logic tied to models.
 Key Differences
 
 Aspect	| Authorization (Gates)	| Policy
-<b>Definition:</b> A simple way to authorize actions (via Gate).	| A structured way to authorize actions tied to a model (via Policy).
+<br><b>Definition:</b> A simple way to authorize actions (via Gate).	| A structured way to authorize actions tied to a model (via Policy).
 
-<b>Use Case:</b> Typically for generic or global actions (e.g., admin access).	| Typically for model-specific actions (e.g., edit a post).
-<b>Registration:</b>	Registered in AuthServiceProvider.	| Registered in AuthServiceProvider.
-<b>Check Method:</b>	``` Gate::allows() ``` or ``` Gate::denies() ```	| ``` authorize() ``` in controllers or ``` @can ``` in views.
-<b>Structure:</b>	One-off authorization checks.	Defines multiple authorization rules for a given model.
-<b>Use Case Example:</b>	"Can the user delete a comment?" |	"Can the user update a post?"
+<br><b>Use Case:</b> Typically for generic or global actions (e.g., admin access).	| Typically for model-specific actions (e.g., edit a post).
+<br><b>Registration:</b>	Registered in AuthServiceProvider.	| Registered in AuthServiceProvider.
+<br><b>Check Method:</b>	``` Gate::allows() ``` or ``` Gate::denies() ```	| ``` authorize() ``` in controllers or ``` @can ``` in views.
+<br><b>Structure:</b>	One-off authorization checks.	Defines multiple authorization rules for a given model.
+<br><b>Use Case Example:</b>	"Can the user delete a comment?" |	"Can the user update a post?"
 
 
 Conclusion:
